@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --royal-gold: #B8860B;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body-md antialiased;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(to bottom, rgba(27, 28, 23, 0.6) 0%, rgba(27, 28, 23, 0.2) 40%, rgba(251, 249, 241, 1) 95%);
+  }
+
+  .parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .chola-pattern {
+    background-image: radial-gradient(circle at 2px 2px, rgba(120, 86, 0, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+  }
+
+  .glass-panel {
+    backdrop-filter: blur(20px);
+    background: rgba(251, 249, 241, 0.7);
+  }
+
+  .luxury-shadow {
+    box-shadow: 0 15px 35px -5px rgba(184, 134, 11, 0.08);
+  }
+
+  .premium-input {
+    @apply w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-5 py-3.5 outline-none font-body-md text-sm text-on-surface transition-all duration-300 focus:border-royal-gold focus:ring-4 focus:ring-royal-gold/10 placeholder:text-on-surface-variant/40 hover:border-royal-gold/40;
+  }
+
+  .premium-select {
+    @apply w-full bg-surface-container-lowest border border-outline-variant/60 rounded-xl px-5 py-3.5 outline-none font-body-md text-sm text-on-surface transition-all duration-300 focus:border-royal-gold focus:ring-4 focus:ring-royal-gold/10 appearance-none cursor-pointer hover:border-royal-gold/40 hover:bg-royal-gold/[0.02];
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23785600' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    background-size: 1rem;
+    padding-right: 3rem;
+  }
+
+  .lotus-divider {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    @apply bg-outline-variant/30 my-24;
+  }
+
+  .lotus-divider::after {
+    content: '⬥';
+    @apply text-primary absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-surface px-8 text-xl;
+  }
+}

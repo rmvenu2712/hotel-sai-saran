@@ -1,0 +1,38 @@
+.featured-rooms {
+  padding: var(--section-padding);
+  background: var(--cream-50);
+}
+
+.featured-rooms__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.featured-rooms__header .section-label {
+  justify-content: center;
+}
+
+.featured-rooms__header .section-label::before {
+  display: none;
+}
+
+.featured-rooms__header .section-subtitle {
+  margin: 0 auto;
+}
+
+.featured-rooms__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.featured-rooms__cta {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .featured-rooms__grid {
+    grid-template-columns: 1fr;
+  }
+}

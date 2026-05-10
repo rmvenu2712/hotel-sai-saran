@@ -1,0 +1,58 @@
+import { Testimonial } from "@/types";
+
+export const testimonials: Testimonial[] = [
+  {
+    id: "1",
+    name: "Rajesh Sharma",
+    location: "Mumbai, Maharashtra",
+    rating: 5,
+    text: "Our family pilgrimage to Rameswaram was made absolutely unforgettable by Hotel Sai Saran. The temple view room was breathtaking, and the staff arranged everything for our darshan. The South Indian breakfast was divine!",
+    avatar: "RS",
+    date: "March 2026",
+  },
+  {
+    id: "2",
+    name: "Priya Krishnan",
+    location: "Chennai, Tamil Nadu",
+    rating: 5,
+    text: "I've stayed at many hotels in Rameswaram but Hotel Sai Saran stands apart. The sea view suite was luxurious, the food was authentic, and the location is perfect. Will definitely return!",
+    avatar: "PK",
+    date: "February 2026",
+  },
+  {
+    id: "3",
+    name: "Amit & Sunita Patel",
+    location: "Ahmedabad, Gujarat",
+    rating: 4,
+    text: "The family suite was perfect for our group of 5. Kids loved the garden area. The staff helped us plan our visit to Dhanushkodi and Pamban Bridge. Great value for money!",
+    avatar: "AP",
+    date: "January 2026",
+  },
+  {
+    id: "4",
+    name: "Dr. Meenakshi Iyer",
+    location: "Bangalore, Karnataka",
+    rating: 5,
+    text: "As a solo traveler seeking spiritual peace, Hotel Sai Saran provided the perfect sanctuary. The proximity to Ramanathaswamy Temple and the serene atmosphere made my stay deeply fulfilling.",
+    avatar: "MI",
+    date: "December 2025",
+  },
+  {
+    id: "5",
+    name: "Vikram Reddy",
+    location: "Hyderabad, Telangana",
+    rating: 5,
+    text: "The Presidential Suite exceeded all expectations! The jacuzzi with ocean views, the personalized butler service, and the VIP temple arrangements — truly a 5-star experience in the heart of Rameswaram.",
+    avatar: "VR",
+    date: "November 2025",
+  },
+  {
+    id: "6",
+    name: "Ananya Nair",
+    location: "Kochi, Kerala",
+    rating: 4,
+    text: "Beautiful heritage hotel with warm hospitality. The complimentary breakfast spread was amazing — idli, dosa, vada, and filter coffee that rivals any in Tamil Nadu! Highly recommended.",
+    avatar: "AN",
+    date: "October 2025",
+  },
+];
